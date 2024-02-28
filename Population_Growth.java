@@ -25,27 +25,10 @@ public class Population_Growth {
         growthRate = input.nextFloat();
         growthRate = growthRate / 100;
 
-        year1 = currentPopulation + (currentPopulation * growthRate);
-        System.out.printf("\nWorld population after one year: %f\n", year1);
-
-        currentPopulation = year1;
-
-        year2 = currentPopulation + (currentPopulation * growthRate);
-        System.out.printf("After two years:%f \n", year2);
-
-        currentPopulation = year2;
-
-        year3 = currentPopulation + (currentPopulation * growthRate);
-        System.out.printf("After three years:%f \n", year3);
-
-        currentPopulation = year3;
-
-        year4 = currentPopulation + (currentPopulation * growthRate);
-        System.out.printf("After four years:%f \n", year4);
-
-        currentPopulation = year4;
-
-        year5 = currentPopulation + (currentPopulation * growthRate);
-        System.out.printf("After five years:%f \n", year5);
+        
+        for (int year = 1; year <= 5; year++) {
+            currentPopulation = currentPopulation + (currentPopulation * growthRate);
+            System.out.printf("\nWorld population after %d year(s): %f\n", year, currentPopulation);
+        }
     }
 }
