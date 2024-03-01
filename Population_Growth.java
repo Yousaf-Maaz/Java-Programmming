@@ -24,7 +24,7 @@ public class Population_Growth {
         System.out.print("Enter the annual world population growth rate (in percent): ");
         growthRate = input.nextFloat();
         growthRate = growthRate / 100;
-        //converting population into decimals
+        //converting population percent into decimals
 
 
         for (int year = 1; year <= 5; year++) {
