@@ -43,5 +43,10 @@ public class BMI {
         } else {
             System.out.println("You are Obese.");
         }
+
+        khan khan = new khan();
+        khan.printStart();
     }
+
+  
 }
