@@ -29,6 +29,7 @@ public class Dice {
         Scanner scanner = new Scanner(System.in);
 
         do {
+            System.out.println("------------------------------------------------------");
             System.out.println("Do you want to roll the dice? Y/N");
             String userInput = scanner.next();
 
