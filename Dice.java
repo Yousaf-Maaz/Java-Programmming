@@ -4,10 +4,6 @@ generates a random no between 1 and 6 (for the dice), updates the value of dice 
 displays it. If the value generated is equal to 6 then a message “Chakkaaaa” should
 display. */
 
-
-
-
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -22,7 +18,7 @@ public class Dice {
     // Method to roll the dice
     public void roll() {
         Random rand = new Random();
-        int rolledValue = rand.nextInt(6) + 1; 
+        int rolledValue = rand.nextInt(6) + 1;
 
         System.out.println(
                 "Side: " + rolledValue + " " + (rolledValue == 6 ? "(Chakkaaaaa)" : "(better luck next time)"));
